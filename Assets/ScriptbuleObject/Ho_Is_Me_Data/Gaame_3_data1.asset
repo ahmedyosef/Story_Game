@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a05d145e4c6c90489cfdf77c97827df, type: 3}
+  m_Name: Gaame_3_data1
+  m_EditorClassIdentifier: Assembly-CSharp::Ho_Is_Me_Data
+  game_Imge:
+  - {fileID: 6215331530690715327, guid: 5bd9827735de5f74cb02eba9eaafc237, type: 3}
+  - {fileID: -7203201959836402923, guid: bedceb3f29c41d3439cea6389dad4b11, type: 3}
+  - {fileID: 5179073809476365421, guid: 2d0e7fb17555d3e41928383773f3c292, type: 3}
+  point: {fileID: 1452870730830976630, guid: e48e16c5c514efe4db968722abf34cd1, type: 3}
+  Quize:
+  - Appel
+  - Orange
+  - Woter Melon
+  imge_ID: 000000000100000002000000

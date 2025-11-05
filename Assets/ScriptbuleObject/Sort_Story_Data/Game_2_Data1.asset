@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a962b335a1f0a74f903177ac2d10cb4, type: 3}
+  m_Name: Game_2_Data1
+  m_EditorClassIdentifier: Assembly-CSharp::Sort_Story_Data
+  game_Imge:
+  - {fileID: 7411925732378410713, guid: 733bc1a6466016749aea01aceb33b1b5, type: 3}
+  - {fileID: -1707989517857129159, guid: bf7eba9dcb1be3d408dc97bd132a4c42, type: 3}
+  - {fileID: 7793441753341476238, guid: c578c8f68a2c78048b023df1ded1e8d9, type: 3}
+  - {fileID: -8488197977077727449, guid: 03bfbe7c9478de94088bb33a7b6594e1, type: 3}
+  - {fileID: -5751814824985863532, guid: fd54f544f8d846a448877353d71c384e, type: 3}
+  - {fileID: -5226338905809536063, guid: 55266883b5e307c4ea2b1fa9e3413f97, type: 3}
+  point:
+  - {fileID: 8797753083846153652, guid: 8ef9ac1b398992b4d817fe8fed799634, type: 3}
+  - {fileID: 8797753083846153652, guid: 8ef9ac1b398992b4d817fe8fed799634, type: 3}
+  - {fileID: 8797753083846153652, guid: 8ef9ac1b398992b4d817fe8fed799634, type: 3}
+  - {fileID: 8797753083846153652, guid: 8ef9ac1b398992b4d817fe8fed799634, type: 3}
+  - {fileID: 8797753083846153652, guid: 8ef9ac1b398992b4d817fe8fed799634, type: 3}
+  - {fileID: 8797753083846153652, guid: 8ef9ac1b398992b4d817fe8fed799634, type: 3}
+  imge_ID: 000000000100000002000000030000000400000005000000

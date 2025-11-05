@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21850a35ba1ed4da59948b0a4f681654, type: 3}
+  m_Name: Figma UI Data
+  m_EditorClassIdentifier: Volorf.Figmage.Runtime::Volorf.FigmaUIImage.FigmaUIData
+  token: figd_ne2udj85QkboeAxHISE3X6ttTyGIm6oUwPyjPX4S
+  figmaLink: https://www.figma.com/design/AarnZEhojtpG6yrfvOEsW2/match-game-after-edited?node-id=24-7143&t=Pz7jsoifb0wUAgHC-1
