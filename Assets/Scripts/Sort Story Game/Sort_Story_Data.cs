@@ -6,7 +6,7 @@ using UnityEngine;
 public class Sort_Story_Data : ScriptableObject
 {
     public List<Sprite> game_Imge;
-    public List<Sprite> point;
+    public Sprite point;
     [ReadOnly] public List<int> imge_ID;
     [Button]
     public void AutoFill_Id()

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
+using RTLTMPro;
 
 public class Ho_Is_Me_GameManger : MonoBehaviour
 {
@@ -63,7 +64,7 @@ public class Ho_Is_Me_GameManger : MonoBehaviour
             Sprite sprite = gameData.point;
             string text = gameData.Quize[i];
             Image mainImg = Instantiate(point_Image, mainObjects_Contener.transform);
-            mainImg.gameObject.GetComponentInChildren<TMP_Text>().text = text;
+            mainImg.gameObject.GetComponentInChildren<RTLTextMeshPro>().text = text;
             mainImg.sprite = sprite;
             mainImg.gameObject.AddComponent<ImageID>().id = id;
             drobber.main_Objects.Add(mainImg.gameObject);

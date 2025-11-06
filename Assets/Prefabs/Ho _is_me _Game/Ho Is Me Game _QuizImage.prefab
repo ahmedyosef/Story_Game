@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5615951715205648872}
   - component: {fileID: 7328535912598524024}
   - component: {fileID: 859468262776902927}
+  - component: {fileID: 112168751730323644}
   m_Layer: 5
   m_Name: Ho Is Me Game _QuizImage
   m_TagString: Untagged
@@ -37,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 400, y: 102}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5615951715205648872
 CanvasRenderer:
@@ -67,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -2315362796649885987, guid: 046610ed5d6bad34f97b738376dff546, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -90,6 +91,91 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Draggable
   gameManager: {fileID: 0}
+--- !u!114 &112168751730323644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2808817476464344858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93080415e4fdb3048a205b33af1e5a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BrunoMikoski.AnimationSequencer::BrunoMikoski.AnimationSequencer.AnimationSequencer
+  animationSteps:
+  - rid: 6115190237751148666
+  updateType: 0
+  timeScaleIndependent: 0
+  autoplayMode: 0
+  startPaused: 0
+  playbackSpeed: 1
+  playType: 0
+  dynamicStartValues: 0
+  loops: 0
+  loopType: 0
+  autoKill: 1
+  onAnimationStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onAnimationProgress:
+    m_PersistentCalls:
+      m_Calls: []
+  onAnimationFinish:
+    m_PersistentCalls:
+      m_Calls: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 6115190237751148666
+      type: {class: TweenStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+      data:
+        delay: 0
+        flowType: 0
+        target: {fileID: 2808817476464344858}
+        duration: 1
+        loopCount: 0
+        loopType: 0
+        actions:
+        - rid: 6115190237751148667
+    - rid: 6115190237751148667
+      type: {class: PositionTweenAction, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+      data:
+        direction: 1
+        ease:
+          ease: 7
+          curve:
+            serializedVersion: 2
+            m_Curve:
+            - serializedVersion: 3
+              time: 0
+              value: 0
+              inSlope: 0
+              outSlope: 1
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            - serializedVersion: 3
+              time: 1
+              value: 1
+              inSlope: 1
+              outSlope: 0
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+        toInputType: 0
+        toPosition: {x: 0, y: -270, z: 0}
+        toRelative: 0
+        toLocalSpace: 1
+        toTarget: {fileID: 0}
+        toOffset: {x: 0, y: 0, z: 0}
+        axisConstraint: 0
+        snapping: 0
 --- !u!1 &7071219378695798482
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,7 +186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2438256002536526902}
   - component: {fileID: 347656855559290295}
-  - component: {fileID: 7058475471217774823}
+  - component: {fileID: 3833868933963904706}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -124,8 +210,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -3.3978, y: 4.5303}
+  m_SizeDelta: {x: 350.2567, y: 72.6517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &347656855559290295
 CanvasRenderer:
@@ -135,7 +221,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7071219378695798482}
   m_CullTransparentMesh: 1
---- !u!114 &7058475471217774823
+--- !u!114 &3833868933963904706
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,9 +230,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7071219378695798482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: b9839c2d141529145a431aef4d757ff3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_EditorClassIdentifier: RTLTMPro::RTLTMPro.RTLTextMeshPro
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -155,7 +241,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -164,7 +250,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4294967295
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -185,10 +271,10 @@ MonoBehaviour:
   m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -226,3 +312,9 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+  preserveNumbers: 0
+  farsi: 1
+  originalText: 
+  fixTags: 1
+  forceFix: 0
+  fieldFix: 0

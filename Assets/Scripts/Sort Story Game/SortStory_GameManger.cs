@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using BrunoMikoski.AnimationSequencer;
 
 public class SortStory_GameManger : MonoBehaviour
 {
@@ -51,41 +52,38 @@ public class SortStory_GameManger : MonoBehaviour
             return;
         }
 
-        // Temp list to hold shadows before shuffling
-        List<GameObject> tempShadows = new List<GameObject>();
+        // Temp list to hold MAIN (draggable) objects before shuffling
+        List<GameObject> tempMains = new List<GameObject>();
 
         for (int i = 0; i < gameData.game_Imge.Count; i++)
         {
-            Sprite sprite = gameData.point[i];
+            Sprite sprite_Poit = gameData.point;
             int id = gameData.imge_ID[i];
 
-            // Main (draggable)
-            Image mainImg = Instantiate(point_Image, mainObjects_Contener.transform);
-            mainImg.sprite = sprite;
-            mainImg.gameObject.AddComponent<ImageID>().id = id;
-            
-            tempShadows.Add(mainImg.gameObject);
-
-
-            Sprite sprite2 = gameData.game_Imge[i];
-            // Shadow (target) — add to temp list first
-            Image shadowImg = Instantiate(game_Image, Vector3.zero, Quaternion.identity); // Don't parent yet
-            shadowImg.sprite = sprite2;
-            shadowImg.gameObject.GetComponent<Draggable>().enabled = false;
+            // Shadow (target) — keep in CORRECT order, no shuffle
+            Image shadowImg = Instantiate(point_Image, shadowObjects_Contener.transform); // Use point_Image for shadow if intended
+            shadowImg.sprite = sprite_Poit;
+            shadowImg.raycastTarget = false; // Optional: prevent clicking on shadow
             shadowImg.gameObject.AddComponent<ImageID>().id = id;
-            //shadow_Objects.Add(shadowImg.gameObject);
             drobber.shadow_Objects.Add(shadowImg.gameObject);
 
+            Sprite sprite = gameData.game_Imge[i];
+            // Main (draggable) — create but DON'T parent yet; add to temp list
+            Image mainImg = Instantiate(game_Image, Vector3.zero, Quaternion.identity);
+            mainImg.sprite = sprite;
+            mainImg.color = Color.white;
+            mainImg.gameObject.AddComponent<ImageID>().id = id;
+            tempMains.Add(mainImg.gameObject);
         }
 
-        // ✅ SHUFFLE the shadow objects
-        ShuffleList(tempShadows);
+        // ✅ SHUFFLE ONLY THE MAIN (DRAGGABLE) OBJECTS
+        ShuffleList(tempMains);
 
-        // Now parent them to the container (in shuffled order)
-        foreach (var shadow in tempShadows)
+        // Now parent shuffled main objects to container
+        foreach (var main in tempMains)
         {
-            shadow.transform.SetParent(mainObjects_Contener.transform, false);
-            drobber.main_Objects.Add(shadow);
+            main.transform.SetParent(mainObjects_Contener.transform, false);
+            drobber.main_Objects.Add(main);
         }
     }
 

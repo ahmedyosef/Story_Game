@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using Sirenix.OdinInspector;
 using System.Collections.Generic;
+using BrunoMikoski.AnimationSequencer;
 public class Drobber : MonoBehaviour
 {
     [Space]
@@ -55,6 +56,8 @@ public class Drobber : MonoBehaviour
             {
                 // ✅ CORRECT MATCH
                 droppedObject.GetComponent<RectTransform>().position = bestMatch.GetComponent<RectTransform>().position;
+                droppedObject.GetComponent<Transform>().SetParent(shadowId.transform);
+                droppedObject.GetComponent<AnimationSequencer>()?.Play();
                 droppedObject.GetComponent<Draggable>().enabled = false;
                 correct_Answer.Play();
                 score_System.AddAnswer(true);
